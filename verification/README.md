@@ -1,0 +1,35 @@
+# Verification record
+
+Machine-produced evidence for the claims in the [top-level README](../README.md). Every file
+here is raw output of the command named beside it, captured on 2026-09-18 from a clean rebuild.
+
+| File | Command | Result |
+|---|---|---|
+| [`build.log`](build.log) | `rm -rf .lake/build && LAKE_NUM_JOBS=4 lake build Erdos1091` | exit 0, 1201 jobs, 19.3s |
+| [`axioms.log`](axioms.log) | `lake env lean Erdos1091/Audit.lean` | 41 declarations audited |
+| [`scan.log`](scan.log) | placeholder and escape-hatch scan over every tracked `.lean` file | see the file |
+| [`CHECKSUMS.txt`](CHECKSUMS.txt) | `git ls-files \| xargs shasum -a 256` | sha256 of every tracked file |
+
+## Reproduce it yourself
+
+```bash
+lake exe cache get            # prebuilt Mathlib oleans, several GB
+rm -rf .lake/build
+LAKE_NUM_JOBS=4 lake build Erdos1091
+lake env lean Erdos1091/Audit.lean > mine.log
+diff <(grep 'depends on axioms' mine.log | sort) \
+     <(grep 'depends on axioms' verification/axioms.log | sort)
+shasum -a 256 -c <(grep -v '^#' verification/CHECKSUMS.txt)
+```
+
+The pins that make this reproducible are [`lean-toolchain`](../lean-toolchain) and
+[`lake-manifest.json`](../lake-manifest.json). Moving either one invalidates this record.
+
+## What the record settles, and what it leaves open
+
+It settles three things: the sources compile, they carry no placeholder and no escape hatch, and
+the kernel accepts every audited declaration using only `propext`, `Classical.choice` and
+`Quot.sound`. Lines reporting a subset of those three are stronger rather than weaker.
+
+It leaves open whether the Lean statement says what the original problem says. That question is
+human review, and the document for it is [`docs/CLAIM.md`](../docs/CLAIM.md). The statement itself comes verbatim from formal-conjectures PR #5870, so a third party wrote it.

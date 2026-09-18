@@ -1,0 +1,63 @@
+# host: Darwin 25.5.0 arm64, 14 cpus
+# date: 2026-09-18T05:07:07Z
+# lean:  Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# lake:  Lake version 5.0.0-src+819816b (Lean version 4.33.1)
+# clean rebuild: rm -rf .lake/build && lake build Erdos1091
+
+✔ [1190/1201] Built FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Circumference (2.4s)
+✔ [1191/1201] Built Erdos1091.DegenerateCore (3.9s)
+✔ [1192/1201] Built FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Cycle (1.4s)
+✔ [1193/1201] Built Erdos1091.Construction (4.3s)
+✔ [1194/1201] Built Erdos1091.CliqueFree (1.3s)
+✔ [1195/1201] Built Erdos1091.Degenerate (1.3s)
+✔ [1196/1201] Built Erdos1091.Chords (3.5s)
+✔ [1197/1201] Built Erdos1091.Coloring (6.3s)
+✔ [1198/1201] Built Erdos1091.Main (1.4s)
+✔ [1199/1201] Built Erdos1091 (1.2s)
+ℹ [1200/1201] Built Erdos1091.Audit (1.3s)
+info: Erdos1091/Audit.lean:44:0: 'Erdos1091.card_validBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:45:0: 'Erdos1091.card_vtx' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:46:0: 'Erdos1091.degree_eq_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:47:0: 'Erdos1091.G'_degree_le_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:48:0: 'Erdos1091.G'_reachable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:52:0: 'Erdos1091.G'_no_triangle' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:53:0: 'Erdos1091.G'_cliqueFree_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:54:0: 'Erdos1091.neighbor_v_cliqueFree_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:55:0: 'Erdos1091.G_cliqueFree_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:59:0: 'Erdos1091.path_four_alternates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:60:0: 'Erdos1091.leaf_attachment_eq_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:61:0: 'Erdos1091.spine_with_leaf_ne_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:65:0: 'Erdos1091.pentagon_forces_c' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:66:0: 'Erdos1091.pentagon_forces_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:67:0: 'Erdos1091.spine_c_of_a' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:68:0: 'Erdos1091.spine_c_eq_alpha' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:72:0: 'Erdos1091.G_not_colorable_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:73:0: 'Erdos1091.G_colorable_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:74:0: 'Erdos1091.G_chromaticNumber' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:78:0: 'Erdos1091.colorable_three_of_isTwoDegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:79:0: 'Erdos1091.proper_subgraph_isTwoDegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:80:0: 'Erdos1091.proper_subgraph_chromaticNumber_le_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:84:0: 'Erdos1091.IsSide.isBridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:85:0: 'Erdos1091.interAdj_isBridge' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:86:0: 'Erdos1091.G'_cycle_within_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:87:0: 'Erdos1091.cycle_chords_le_five_of_notMem_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:91:0: 'Erdos1091.exists_vPath' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:92:0: 'Erdos1091.exit_of_mem_P_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:93:0: 'Erdos1091.chordSlots_card_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:94:0: 'Erdos1091.mem_specialBlocks' depends on axioms: [propext, Quot.sound]
+info: Erdos1091/Audit.lean:95:0: 'Erdos1091.chords_le_ten_of_mem_v' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:99:0: 'Erdos1091.cycle_chords_le_ten' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:103:0: 'Erdos1091.cliqueFree_map_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:104:0: 'Erdos1091.chromaticNumber_map_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:105:0: 'Erdos1091.subgraph_chromaticNumber_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:106:0: 'Erdos1091.subgraph_chromaticNumber_map_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:107:0: 'Erdos1091.cycle_chords_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:108:0: 'Erdos1091.cycle_chords_map_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:112:0: 'Erdos1091.size_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:113:0: 'Erdos1091.theorem_4_1' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Erdos1091/Audit.lean:114:0: 'Erdos1091.erdos_1091.variants.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (1201 jobs).
+real 19.26
+user 28.69
+sys 10.97
+# exit=0
