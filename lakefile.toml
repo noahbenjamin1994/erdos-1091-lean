@@ -1,0 +1,22 @@
+# Standalone Lake package for the Erdős 1091 formalization.
+#
+# It depends on Mathlib plus exactly two files vendored from
+# google-deepmind/formal-conjectures PR #5870 (see FormalConjecturesForMathlib/, whose
+# original copyright headers are preserved): the `SimpleGraph.Cycle` / `Cycle.chords` API
+# that the target statement is phrased in, and the `Circumference` file it imports.
+name = "erdos1091"
+defaultTargets = ["Erdos1091"]
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.33.1"
+
+# The vendored PR #5870 base: the Cycle / chords API. Not our work — see file headers.
+[[lean_lib]]
+name = "FormalConjecturesForMathlib"
+globs = ["FormalConjecturesForMathlib.+"]
+
+[[lean_lib]]
+name = "Erdos1091"
+globs = ["Erdos1091", "Erdos1091.+"]
