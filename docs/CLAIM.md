@@ -1,7 +1,8 @@
 # Draft `[Recipient]` issue — JSP-000907 (Erdős 1091)
 
-Draft text for an issue on `TheJustinSunPrize/awards`. **Not yet submitted.**
-Read the pre-submission checklist at the bottom before posting.
+**Posted 2026-09-18 as [TheJustinSunPrize/awards#1019](https://github.com/TheJustinSunPrize/awards/issues/1019).**
+The text below is the draft it was built from; the posted version adds the disclosure of the
+concurrent IIIS Lean release, see the Related claims section there.
 
 ---
 
@@ -17,7 +18,7 @@ A complete Lean 4 formalization of Theorem 4.1 of Alexeev–Putterman–Sawhney�
 *Short proofs in combinatorics, probability and number theory II*, arXiv:2604.06609, §4 — the
 explicit counterexample that answers Erdős 1091 in the negative.
 
-Repository: `<REPO URL>` (Lean toolchain and Mathlib commit pinned in the repo).
+Repository: https://github.com/noahbenjamin1994/erdos-1091-lean (Lean toolchain and Mathlib commit pinned in the repo).
 
 ### Statement
 
@@ -73,13 +74,16 @@ was added anywhere.
 
 ## Pre-submission checklist
 
-- [ ] Push the repository publicly and paste the real URL above (priority is by public timestamp).
-- [ ] Run `lake build` locally once on the pinned toolchain and confirm `lake-manifest.json` is
-      unchanged — the checked-in manifest was reconstructed from Mathlib's own pins at tag
-      `v4.33.1` (commit `0df444a360eaa60ab8c11dca51a86af692955474`), not produced by this machine.
+- [x] Pushed public 2026-09-18T04:05Z.
+- [x] `lake exe cache get && lake build Erdos1091` run locally on a clean clone: exit 0, 1201 jobs,
+      axiom audit clean, and Lake left `lake-manifest.json` untouched, which confirms the
+      reconstructed pins.
+- [x] Manifest confirmed: reconstructed from Mathlib's own pins at tag `v4.33.1`
+      (commit `0df444a360eaa60ab8c11dca51a86af692955474`) and accepted unchanged by Lake.
 - [ ] Decide whether to also open the `formal-conjectures` PR filling PR #5870's `sorry`, and
       reference it here. Aligning with the `formal-conjectures` trunk toolchain may require a
       Mathlib bump from `v4.33.1`.
-- [ ] Re-check the competition state on the day of submission: JSP issues for 000907, GitHub repos
-      matching `jsp-000907-*`, open `formal-conjectures` PRs.
-- [ ] Post this issue on its own. Do not batch it with other problems.
+- [x] Competition state checked 2026-09-18T03:56Z: no JSP claim issue; one concurrent independent
+      release, `iiis-lean/Erdos1091`, public since 03:31Z, disclosed in the posted issue.
+- [ ] Watch `iiis-lean/Erdos1091` for a later claim or an upstream bridge.
+- [x] Posted on its own.
