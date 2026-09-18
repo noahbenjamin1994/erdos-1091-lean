@@ -1,4 +1,8 @@
 /-
+Formalization authors: noahbenjamin1994 (Apevon Science), https://github.com/noahbenjamin1994
+AI-assisted; see AUTHORS.md. Mathematical credit belongs to the paper authors, see README.md.
+-/
+/-
 Copyright 2026 The Formal Conjectures Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");

@@ -1,19 +1,19 @@
 # host: Darwin 25.5.0 arm64, 14 cpus
-# date: 2026-09-18T05:07:07Z
+# date: 2026-09-18T06:02:02Z
 # lean:  Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
 # lake:  Lake version 5.0.0-src+819816b (Lean version 4.33.1)
 # clean rebuild: rm -rf .lake/build && lake build Erdos1091
 
-✔ [1190/1201] Built FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Circumference (2.4s)
+✔ [1190/1201] Built FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Circumference (2.5s)
 ✔ [1191/1201] Built Erdos1091.DegenerateCore (3.9s)
 ✔ [1192/1201] Built FormalConjecturesForMathlib.Combinatorics.SimpleGraph.Cycle (1.4s)
-✔ [1193/1201] Built Erdos1091.Construction (4.3s)
-✔ [1194/1201] Built Erdos1091.CliqueFree (1.3s)
-✔ [1195/1201] Built Erdos1091.Degenerate (1.3s)
-✔ [1196/1201] Built Erdos1091.Chords (3.5s)
-✔ [1197/1201] Built Erdos1091.Coloring (6.3s)
-✔ [1198/1201] Built Erdos1091.Main (1.4s)
-✔ [1199/1201] Built Erdos1091 (1.2s)
+✔ [1193/1201] Built Erdos1091.Construction (4.5s)
+✔ [1194/1201] Built Erdos1091.CliqueFree (1.4s)
+✔ [1195/1201] Built Erdos1091.Degenerate (1.4s)
+✔ [1196/1201] Built Erdos1091.Chords (3.6s)
+✔ [1197/1201] Built Erdos1091.Coloring (6.6s)
+✔ [1198/1201] Built Erdos1091.Main (1.3s)
+✔ [1199/1201] Built Erdos1091 (1.3s)
 ℹ [1200/1201] Built Erdos1091.Audit (1.3s)
 info: Erdos1091/Audit.lean:44:0: 'Erdos1091.card_validBlock' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: Erdos1091/Audit.lean:45:0: 'Erdos1091.card_vtx' depends on axioms: [propext, Classical.choice, Quot.sound]
@@ -57,7 +57,7 @@ info: Erdos1091/Audit.lean:112:0: 'Erdos1091.size_bounds' depends on axioms: [pr
 info: Erdos1091/Audit.lean:113:0: 'Erdos1091.theorem_4_1' depends on axioms: [propext, Classical.choice, Quot.sound]
 info: Erdos1091/Audit.lean:114:0: 'Erdos1091.erdos_1091.variants.counterexample' depends on axioms: [propext, Classical.choice, Quot.sound]
 Build completed successfully (1201 jobs).
-real 19.26
-user 28.69
-sys 10.97
+real 19.53
+user 29.41
+sys 11.40
 # exit=0

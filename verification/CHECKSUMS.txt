@@ -1,10 +1,11 @@
 # sha256 of every tracked file, excluding verification/ itself
-# date: 2026-09-18T05:10:38Z
+# date: 2026-09-18T06:02:25Z
 # toolchain: leanprover/lean4:v4.33.1
 # mathlib:   0df444a360eaa60ab8c11dca51a86af692955474
 # verify with: shasum -a 256 -c <(grep -v '^#' verification/CHECKSUMS.txt)
 9ddeb7cb6af42a16a31bc4df8fbf6510ec67d4c29476d31a35718693ea4d96dc  .gitignore
-49de4513f7a2baf762e762b1f4a774f5b92a9ce06dbfec3c2499bf52ae4b6078  Erdos1091.lean
+25b728cf8211c157791205f64f255617d49589e29f4db6ef957f587b6a4fe160  AUTHORS.md
+ebd002eaf565254168b711cbd07c19811fbbd8bef4da503cc64d8b711c79ed2b  Erdos1091.lean
 71e88a60befd60b07ca6271c54d56b38aa707056672480b010fd47bde21c1b72  Erdos1091/Audit.lean
 fceff558b6bf3e427cada8accbf2a14f55c972670a7069260506bb0637271c5c  Erdos1091/Chords.lean
 fe79c691c06d9378f84159ba455383a3945cee9ec798131d9ae26f7e301a3442  Erdos1091/CliqueFree.lean
@@ -16,7 +17,7 @@ aa503d8ec64a93a89d9dd8be25c553d7139453fcb3d35b6e4e4c620f20b63829  Erdos1091/Dege
 461b20c4af8ae1eac9ce89166e2c50dbcc5f1ef2b50e8eacc5538ff6b7ca998a  FormalConjecturesForMathlib/Combinatorics/SimpleGraph/Circumference.lean
 116604ce0c0326592567c570db0b15e835ae14b367d31be217699b249afabea4  FormalConjecturesForMathlib/Combinatorics/SimpleGraph/Cycle.lean
 795a685dccf5144a845d2c31a2d4aa355d3713f5529c7a22c632af84d8cb4af0  LICENSE
-c3efa9b680714975b05f6a06d15873e4796bea5d3cf1250831b8dd9efdf46a83  README.md
+b68a768ce3342057276bb18bb5710b8bbaf83a437519c7481b3b5d810a91f4a0  README.md
 ad331b783e982a1447a2cb5529b3d316b40d5ba4a909c52e93b20d3b1d5f406e  docs/CLAIM.md
 25b1f5f6f31aa129594ddff47854ba4c728e3db6fc460f9b44a7aecfd2253c58  docs/README.md
 98d666b2b46dbc1ac478bb46bd08467204c735c335f2181d7c2a57a45d7d97ff  docs/README.zh.md
