@@ -74,15 +74,15 @@ globs = ["Erdos1091", "Erdos1091.+"]
 
 | 文件 | 内容 |
 |---|---|
-| [`Erdos1091/Construction.lean`](Erdos1091/Construction.lean) | 顶点类型、邻接关系、`DecidableRel` 实例、度数、顶点计数 `20m+31` |
-| [`Erdos1091/CliqueFree.lean`](Erdos1091/CliqueFree.lean) | **L4.2** `Gₘ` 是 `K₄`-free(`G'ₘ` 三角形自由 + `N(v)` 是不交路径之并) |
-| [`Erdos1091/Degenerate.lean`](Erdos1091/Degenerate.lean) | **P4.6** 每个真子图 2-degenerate ⇒ 3-可着色 |
-| [`Erdos1091/Coloring.lean`](Erdos1091/Coloring.lean) | **L4.3** 叶强制、**L4.4** 脊传播(三个 case)、**P4.5** 不可 3-着色,外加显式 4-着色 `color4` 与 `χ(Gₘ) = 4` |
-| [`Erdos1091/Chords.lean`](Erdos1091/Chords.lean) | **L4.7** 圈含于单块、**L4.8/4.9** 叶块/脊块弦计数、**P4.10** `ch(C) ≤ 10` |
-| [`Erdos1091/DegenerateCore.lean`](Erdos1091/DegenerateCore.lean) | **通用件**:2-degenerate ⇒ 3-可着色(Mathlib 没有) |
-| [`Erdos1091/Main.lean`](Erdos1091/Main.lean) | **T4.1** 组装、两条同构搬运通用件,以及搬到 `Fin n` 上的目标陈述 |
-| [`Erdos1091/Audit.lean`](Erdos1091/Audit.lean) | 41 条 `#print axioms`,只用于审计,不被任何文件 import |
-| [`Erdos1091.lean`](Erdos1091.lean) | 根模块,`import` 上面全部 |
+| [`Erdos1091/Construction.lean`](../Erdos1091/Construction.lean) | 顶点类型、邻接关系、`DecidableRel` 实例、度数、顶点计数 `20m+31` |
+| [`Erdos1091/CliqueFree.lean`](../Erdos1091/CliqueFree.lean) | **L4.2** `Gₘ` 是 `K₄`-free(`G'ₘ` 三角形自由 + `N(v)` 是不交路径之并) |
+| [`Erdos1091/Degenerate.lean`](../Erdos1091/Degenerate.lean) | **P4.6** 每个真子图 2-degenerate ⇒ 3-可着色 |
+| [`Erdos1091/Coloring.lean`](../Erdos1091/Coloring.lean) | **L4.3** 叶强制、**L4.4** 脊传播(三个 case)、**P4.5** 不可 3-着色,外加显式 4-着色 `color4` 与 `χ(Gₘ) = 4` |
+| [`Erdos1091/Chords.lean`](../Erdos1091/Chords.lean) | **L4.7** 圈含于单块、**L4.8/4.9** 叶块/脊块弦计数、**P4.10** `ch(C) ≤ 10` |
+| [`Erdos1091/DegenerateCore.lean`](../Erdos1091/DegenerateCore.lean) | **通用件**:2-degenerate ⇒ 3-可着色(Mathlib 没有) |
+| [`Erdos1091/Main.lean`](../Erdos1091/Main.lean) | **T4.1** 组装、两条同构搬运通用件,以及搬到 `Fin n` 上的目标陈述 |
+| [`Erdos1091/Audit.lean`](../Erdos1091/Audit.lean) | 41 条 `#print axioms`,只用于审计,不被任何文件 import |
+| [`Erdos1091.lean`](../Erdos1091.lean) | 根模块,`import` 上面全部 |
 
 ## 构造(`Gₘ`)
 

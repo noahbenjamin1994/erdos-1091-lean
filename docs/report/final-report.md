@@ -113,7 +113,7 @@ Erdős 1091 问的是：是否存在一个趋于无穷的函数 f(r)，使得每
 
 图 1 引理依赖关系图
 
-![引理依赖关系图：从构造 G_m 到目标陈述的推导走向](erdos-1091-lean/figures/fig_01_lemma_deps.png)
+![引理依赖关系图：从构造 G_m 到目标陈述的推导走向](../figures/fig_01_lemma_deps.png)
 
 ### 4.2 源码规模
 
